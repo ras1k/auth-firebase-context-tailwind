@@ -11,14 +11,14 @@ const AuthProviders = ({ children }) => {
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
-    const logIn = (email, password)=>{
+    const signIn = (email, password)=>{
         return signInWithEmailAndPassword(auth, email, password)
     }
 
     const authInfo = {
         user,
         createUser,
-        logIn
+        signIn
     }
 
     return (
